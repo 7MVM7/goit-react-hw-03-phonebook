@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
+import data from "./data";
 import ContactsForm from "./ContactsForm/ContactsForm";
 import Filter from "./Filter/Filter";
 import ContactsList from "./ContactsList/ContactsList";
-import data from "./data";
 
 export default function App() {
   const [contacts, setContacts] = useState(() => {
@@ -25,7 +25,7 @@ export default function App() {
     contacts.find(
       (contact) => contact.name.toLowerCase() === addContact.name.toLowerCase()
     )
-      ? alert(`${name} is already in contacts`)
+      ? alert(`${name} Такий контакт вже існує`)
       : setContacts((prevContacts) => [addContact, ...prevContacts]);
   };
 

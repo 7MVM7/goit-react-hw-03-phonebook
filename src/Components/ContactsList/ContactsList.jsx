@@ -1,7 +1,7 @@
 import React from "react";
-
 import PropTypes from "prop-types";
 import { MyList } from "./ContactsList.styled";
+
 const ContactsList = ({ contacts, deleteContact }) => {
   return (
     <MyList>

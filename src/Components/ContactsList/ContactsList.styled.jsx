@@ -12,7 +12,8 @@ padding: 0;
   margin-bottom: 8px;
 }
 .buttonDelete {
-  
+
+
   margin-left: 10px;
   border: 2px solid red;
   font-size: 13px;
